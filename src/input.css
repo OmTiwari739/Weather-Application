@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+    #input-container ul {
+        /* display: none; */
+        /* transform: translateY(0px); */
+        height: 0;
+        overflow: hidden;
+        transition: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-in;
+      }
+    
+      /* Show the recentCities list when the input or its parent has focus */
+      #input-container:focus-within ul {
+        /* display: block; */
+        height: fit-content;
+      }
+}
